@@ -1,0 +1,22 @@
+
+.card img {
+    height: 8.5em;
+    object-fit: cover; 
+  }
+  .cart-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+  footer {
+    text-align: center; margin-left: 10px;
+  }
+  /*.store-name p{
+  margin-bottom: 1em; text-align: center;
+  padding-bottom: 0.2em; color: rgb(255, 141, 2);
+  }
+  .store-name h1{
+    color: rgb(255, 141, 2);
+  }*/
+  
