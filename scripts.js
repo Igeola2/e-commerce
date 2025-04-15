@@ -97,14 +97,21 @@ function removeFromCart(index) {
 }
 
 function checkout() {
+
+  if (cart.length > 0){
+
   alert("Thank you for your patronage @Amityville!");
+
   cart.length = 0;
   updateCartUI();
   const modal = bootstrap.Modal.getInstance(
     document.getElementById("cartModal")
   );
   modal.hide();
+  }
+    else {
+  alert("Kindly make a purchase!");
 }
-
+}
 // Init
 displayProducts();
