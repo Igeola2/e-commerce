@@ -5,12 +5,18 @@
   }
   .cart-btn {
     position: fixed;
-    top: 20px;
+    top: 13px;
     right: 20px;
     z-index: 999;
   }
   footer {
     text-align: center; margin-left: 10px;
+  }
+  .container-fluid{
+    margin: 0;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
   }
   /*.store-name p{
   margin-bottom: 1em; text-align: center;

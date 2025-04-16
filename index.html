@@ -31,55 +31,57 @@
     <title>Simple E-Commerce</title>
   </head>
   <body>
-    <!-- Cart Button -->
-    <button
-      class="btn btn-primary cart-btn"
-      data-bs-toggle="modal"
-      data-bs-target="#cartModal"
-    >
-      🛒 Cart (<span id="cart-count">0</span>)
-    </button>
+    <div container-flud>
+      <!-- Cart Button -->
+      <button
+        class="btn btn-primary cart-btn"
+        data-bs-toggle="modal"
+        data-bs-target="#cartModal"
+      >
+        🛒 Cart (<span id="cart-count">0</span>)
+      </button>
 
-    <div class="container my-5 store-name">
-      <h1 class="text-center mb-4">AMITYVILLE PRODUCT & STORES</h1>
-      <div class="row" id="product-list">
-        <!-- Products will be injected here -->
+      <div class="container my-5 store-name">
+        <h1 class="text-center mb-4">AMITYVILLE PRODUCT & STORES</h1>
+        <div class="row" id="product-list">
+          <!-- Products will be injected here -->
+        </div>
       </div>
-    </div>
 
-    <!-- Cart Modal -->
-    <div class="modal fade" id="cartModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Your Cart</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body" id="cart-items">
-            <!-- Cart items go here -->
-          </div>
-          <div class="modal-footer">
-            <strong>Total: $<span id="cart-total">0.00</span></strong>
-            <button class="btn btn-success" onclick="checkout()">
-              Checkout
-            </button>
+      <!-- Cart Modal -->
+      <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Your Cart</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body" id="cart-items">
+              <!-- Cart items go here -->
+            </div>
+            <div class="modal-footer">
+              <strong>Total: $<span id="cart-total">0.00</span></strong>
+              <button class="btn btn-success" onclick="checkout()">
+                Checkout
+              </button>
+            </div>
           </div>
         </div>
       </div>
+
+      <footer>
+        <p>
+          <strong
+            >© Amityville Product & Stores, 2025. All rights Reserved.</strong
+          >
+        </p>
+      </footer>
+
+      <script src="./scripts.js"></script>
     </div>
-
-    <footer>
-      <p>
-        <strong
-          >© Amityville Product & Stores, 2025. All rights Reserved.</strong
-        >
-      </p>
-    </footer>
-
-    <script src="./scripts.js"></script>
   </body>
 </html>
